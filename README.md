@@ -40,7 +40,7 @@ python train.py
 
 ## Testing using pre-trained models
 - Download the repository files and pre-trained model of GMs in the respective folder, StarGAN: https://github.com/yunjey/stargan , CycleGAN: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix , GauGAN: https://github.com/NVlabs/SPADE
-- Download the pre-trained model for our template from https://drive.google.com/file/d/1p9zETa9rCU0wx8wD5Ige2TbCL8WciV7o/view?usp=sharing
+- Download the pre-trained model using the above links. 
 - Provide the model path in the code
 - Run the code as shown below for StarGAN:
 
