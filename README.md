@@ -3,7 +3,7 @@ Official Pytorch implementation of CVPR 2023 paper "MaLP: Manipulation Localizat
 
 [Vishal Asnani](https://github.com/vishal3477), [Xi Yin](https://xiyinmsu.github.io/), [Tal Hassner](https://talhassner.github.io/home/), [Xiaoming Liu](https://www.cse.msu.edu/~liuxm/index2.html)
 
-![alt text](https://github.com/vishal3477/pro_loc/blob/main/images/teaser_3.png?raw=true)
+![alt text](https://github.com/vishal3477/pro_loc/blob/main/images/overview_4.png?raw=true)
 ## Prerequisites
 
 - PyTorch 1.5.0
