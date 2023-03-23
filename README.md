@@ -61,7 +61,7 @@ python test_gaugan.py
 
 If you would like to use our work, please cite:
 ```
-@inproceedings{asnani2022pro_loc
+@inproceedings{asnani2023pro_loc
       title={MaLP: Manipulation Localization Using a Proactive Scheme}, 
       author={Asnani, Vishal and Yin, Xi and Hassner, Tal and Liu, Xiaoming},
       booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
