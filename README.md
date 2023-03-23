@@ -21,7 +21,7 @@ Official Pytorch implementation of CVPR 2023 paper "MaLP: Manipulation Localizat
 The pre-trained model trained on STGAN can be downloaded using the information below:
 
 Model     | Link 
----------|--------|-----|--------|-----|-----|-------|--------|-----
+---------|--------
 Localization only | [Model]()    
 Localization + Detection | [Model]()    
 
