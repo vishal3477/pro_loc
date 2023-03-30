@@ -3,6 +3,9 @@ Official Pytorch implementation of CVPR 2023 paper "MaLP: Manipulation Localizat
 
 [Vishal Asnani](https://github.com/vishal3477), [Xi Yin](https://xiyinmsu.github.io/), [Tal Hassner](https://talhassner.github.io/home/), [Xiaoming Liu](https://www.cse.msu.edu/~liuxm/index2.html)
 
+[Paper](http://cvlab.cse.msu.edu/pdfs/asnani_yin_hassner_liu_cvpr2023.pdf) [Supplementary](http://cvlab.cse.msu.edu/pdfs/asnani_yin_hassner_liu_cvpr2023_supp.pdf)
+
+
 ![alt text](https://github.com/vishal3477/pro_loc/blob/main/images/overview_4.png?raw=true)
 ## Prerequisites
 
@@ -22,41 +25,47 @@ The pre-trained model trained on STGAN can be downloaded using the information b
 
 Model     | Link 
 ---------|--------
-Localization only | [Model]()    
-Localization + Detection | [Model]()    
+Localization only | [Model](https://drive.google.com/file/d/1fIoiVpZMNtn_wr-yo8verYX8lQY30Zle/view?usp=share_link)    
+Localization + Detection | [Model](https://drive.google.com/file/d/1bZGWG_TTN5Gers0V4VXDiGPq82Tc86qG/view?usp=sharing)    
 
 ## Training
-- Go to the folder STGAN
-- Download the STGAN repository files and pre-trained model from https://github.com/csmliu/STGAN
-- Provide the train and test path in respective codes as sepecified below. 
-- Provide the model path to resume training
+- Install VIT transformer package following the instructions in https://github.com/lucidrains/vit-pytorch
+- Download the STGAN repository files and pre-trained model from https://github.com/csmliu/STGAN and place the train_loc_det.py file in that folder
 - Run the code as shown below:
 
 ```
-python train.py
+python train_loc_det.py --data_train "YOUR DATA PATH" --resume --model_path "MODEL PATH" 
 ```
 
+For training only localization module, run the code as shown below:
+```
+python train_loc.py --data_train "YOUR DATA PATH" --resume --model_path "MODEL PATH" 
+```
 
 
 ## Testing using pre-trained models
-- Download the repository files and pre-trained model of GMs in the respective folder, StarGAN: https://github.com/yunjey/stargan , CycleGAN: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix , GauGAN: https://github.com/NVlabs/SPADE
 - Download the pre-trained model using the above links. 
 - Provide the model path in the code
-- Run the code as shown below for StarGAN:
+- Run the code as shown below:
 
 ```
-python test_stargan.py
+python evaluation_loc_det.py --data_train "YOUR DATA PATH" --resume --model_path "MODEL PATH" 
 ```
-- Run the code as shown below for CycleGAN:
 
-```
-python test_cyclegan.py
-```
-- Run the code as shown below for GauGAN:
+## Visualization
+STGAN 
+![alt text](https://github.com/vishal3477/pro_loc/blob/main/images/visualization_supp_1.png?raw=true)
 
-```
-python test_gaugan.py
-```
+STGAN 
+![alt text](https://github.com/vishal3477/pro_loc/blob/main/images/visualization_supp_2.png?raw=true)
+
+DRIT
+![alt text](https://github.com/vishal3477/pro_loc/blob/main/images/visualization_supp_3.png?raw=true)
+
+GauGAN
+![alt text](https://github.com/vishal3477/pro_loc/blob/main/images/visualization_supp_4.png?raw=true)
+
+
 
 
 If you would like to use our work, please cite:
