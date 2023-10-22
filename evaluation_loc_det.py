@@ -509,7 +509,7 @@ for idx, batch in enumerate(te_data):
 
 
 
-    signal ,input_with_signal, signal_rec,gen_img_with_signal,signal_fake, gt, dist_fake_enc, dist_fake_trans, pred_class,gt_class, dist_fake=train(torch.tensor(batch[0]).permute(0,3,1,2).type(torch.cuda.FloatTensor), xa_sample_ipt,gen_img.permute(0,3,1,2).type(torch.cuda.FloatTensor), signal_est_red, signal_est1, transformer, encoder_model)
+    signal ,input_with_signal, signal_rec,gen_img_with_signal,signal_fake, gt, dist_fake_enc, dist_fake_trans, pred_class,gt_class, dist_fake=test(torch.tensor(batch[0]).permute(0,3,1,2).type(torch.cuda.FloatTensor), xa_sample_ipt,gen_img.permute(0,3,1,2).type(torch.cuda.FloatTensor), signal_est_red, signal_est1, transformer, encoder_model)
 
     
     
