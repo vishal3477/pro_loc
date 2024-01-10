@@ -17,7 +17,7 @@ Official Pytorch implementation of CVPR 2023 paper "MaLP: Manipulation Localizat
 
 ## Datasets 
 - Every GM is used with different datasets they are trained on. The GM-dataset information is given in Tab. 2 of the supplmentary. Please refer to the test images released by [Proactive detection work](https://github.com/vishal3477/proactive_IMD). 
-- For other GMs, we will release the test images soon. 
+- For new datasets used, please go [here](https://drive.google.com/file/d/1JfOqxlGhbvVGdiTK5P47YywYMe8C1Eob/view?usp=drive_link). 
 - The training data is used as CELEBA.
 
 ## Pre-trained model
